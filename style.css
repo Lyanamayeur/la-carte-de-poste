@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case{
+    background: linear-gradient(135deg, #c99353, #dfae77);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+
+
+}
+
+.profile-card {
+    display: flex;
+    align-content: center;
+    position: fixed;
+    justify-content: space-between;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    margin-left: 45px;
+    margin-top:45px;
+    padding: auto;
+
+
+}
+
+.left {
+    background: white;
+    text-align: center;
+    padding: 50px;
+    row-gap: 20px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #4c4c4e;
+    margin-bottom: 10px;
+    transform: rotate(0deg); /* Pas de rotation initiale */
+    transition: transform 1s ease; /* Animation de rotation au survol */
+  
+}
+.left img:hover ::before {
+    transform: rotate(360deg); /* Rotation du contour au survol */
+}
+    
+
+
+.left h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.left p {
+    font-size: 14px;
+    color: gray;
+}
+
+.left button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #444240;
+    background: white;
+    border-radius: 30px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.left button:hover {
+    background: #61594e;
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #f5e5d3;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+}
+
+.stat {
+    margin: 10px 0;
+    color: #3f362c;
+
+}
+
+
+.stat:hover{
+background: #534a4352;
+}
+
+.stat strong {
+    font-size: 30px;
+}
+
+.stat span {
+    display: block;
+    font-size: 12px;
+    color: gray;
+}
